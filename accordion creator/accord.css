@@ -1,0 +1,75 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body{
+    background-image: url('Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accordion{
+    margin-top: 80px;
+    background-color: aliceblue;
+    height: 820px ;
+    width: 730px ;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.accordion-title{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.question{
+    padding: 19px 0px;
+    margin-bottom:4px;
+    font-size: 22px;
+    cursor:pointer;
+    position: relative;
+    border-bottom: 1px solid #000;
+    font-weight: 500;
+}
+
+.content-container{
+    margin-bottom: 25px;
+    
+}
+
+.question::after{
+    content: '+ ';
+
+    position: absolute;
+
+    font-size: large;
+    right: 25px;
+}
+
+.answer{
+    padding-top: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+
+    height: 0px;
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+/*      JAVASCRIPT STYLING LINK     */
+
+.accordion .content-container.active .answer{
+    height: 150px;
+}
